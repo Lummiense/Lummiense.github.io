@@ -1,22 +1,33 @@
 h1
 {
-text-align: center;font-size:40px;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:40px;
 }
-nav{
-    font-size:30px
+.Navigation a{
+    color: black;
+    font-size:30px;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 10px;
+    text-decoration:solid;
+    padding-bottom: 10px;
 }
+
 .Conference{
+    text-align: center;
     background-image: url("../images/Conference background.jpg");
     background-size: no-repeat;
     background-position: center;
-    background-size: cover;    
+    background-size: cover;
+    padding-top: 10px;padding-bottom: 10px    
 }
-.Registration{font-weight: bold;color: black;font-size: 20px;
+form{
+font-weight: bold;color: black;font-size: 20px;
 text-align: center;
 background-color: aliceblue; 
-padding-top: 10px;
-
-}
-.sub{
-    padding-top: 10px;padding-bottom: 10px
+position: relative;
+top: 10px;
+width: 500px;
+height: 600px;
+left: 540px;
 }
