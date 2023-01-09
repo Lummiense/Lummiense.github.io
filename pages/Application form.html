@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация на участие в конференции</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body class="Conference">
+    <header>
+        <h1>
+            Анкета участника
+        </h1>
+        <nav>
+            <a href="../index.html">Главная</a>
+            <a href="Catalog.html">Каталог ресурсов</a>
+            <a href="Application form.html">Регистрация на участие в конференции</a>
+        </nav>
+    </header>
+    <main>
+    <form method="post" class="Registration">
+        <div>
+            <b>Заполните данные анкеты</b>
+        </div>
+        <fieldset>
+          <label for="Имя">Имя</label>
+        <div>          
+            <input
+            type="text"            
+              name="Имя"/><br />
+        </div>
+          <label for="Фамилия">Фамилия</label>
+        <div>
+            <input
+              type="text"
+              name="Фамилия"/><br />
+            </div>
+            <label for="Отчество">Отчество</label>
+        <div>
+            <input
+            type="text"
+            name="Отчество"
+            /><br />
+        </div>
+        <label for="Дата рождения">Дата рождения</label>
+        <div>
+            <input
+            type ="date"
+            name="Дата рождения"
+            /><br />
+        </div>
+        <label for="Phone">Phone</label>
+        <div>
+            <input
+            type ="tel"
+            name="Phone"
+            /><br />
+        </div>
+        <label for="Email">Email</label>
+        <div>
+            <input
+            type ="email"
+            name="Email"
+            /><br />
+        </div>
+        </fieldset>
+          <div  class="sub">          
+            <legend>Выберите предмет</legend>
+            <input type="checkbox" name="" id="">Математика
+            <input type="checkbox" name="Собеседование" id="">Физика
+            <input type="checkbox" name="" id="">Информатика
+          </div>
+        
+        
+        
+          <div  class="sub">  
+          <legend>Выберите удобное для Вас время</legend>            
+          <label for="Time"><input 
+            type="radio" 
+            name="Time"
+            id="T1"
+            value="10:00">10:00</label>  
+          <label for="Time"><input 
+            type="radio" 
+            name="Time"
+            id="T2"
+            value="10:30">10:30</label>
+            <label for="Time"><input 
+              type="radio" 
+              name="Time"
+              id="T3"
+              value="11:00">11:00</label>
+            <label for="Time"><input 
+              type="radio" 
+              name="Time"
+              id="T4"
+              value="11:30">11:30 </label>
+            </div>
+            
+                    
+          <div class="sub">
+          <legend>Форма контроля</legend>            
+           <input type="checkbox" name="" id="">Тест
+           <input type="checkbox" name="Собеседование" id="">Собеседование
+           <input type="checkbox" name="" id="">Доклад
+           <input type="checkbox" name="Собеседование" id="">Контрольная работа
+          </div>
+          <div class="sub">
+            Дополнительная информация
+          </div>
+          <div class="sub">
+            <textarea name="" id="" cols="30" rows="3"></textarea>
+          </div>
+          <div class="sub"><input type="submit" />
+            <input type="reset" value="Очистить форму">
+          </div>
+    </form>
+</main>  
+</body>
+</html>
