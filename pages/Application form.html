@@ -6,74 +6,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Регистрация на участие в конференции</title>
     <link rel="stylesheet" href="../style/style.css">
+    <script src="../Script/Not_Null_Validation.js"></script>
 </head>
-<body class="Conference">
+<body class="Conference" >  
     <header>
         <h1>
             Анкета участника
         </h1>
-        <nav>
+        <nav class="Navigation">            
             <a href="../index.html">Главная</a>
             <a href="Catalog.html">Каталог ресурсов</a>
             <a href="Application form.html">Регистрация на участие в конференции</a>
         </nav>
     </header>
     <main>
-    <form method="post" class="Registration">
+    <form name ="anketa"  method="post">      
         <div>
             <b>Заполните данные анкеты</b>
-        </div>
-        <fieldset>
-          <label for="Имя">Имя</label>
-        <div>          
+        </div>        
+          <label for="Name">Имя</label>
+          <div>          
             <input
             type="text"            
-              name="Имя"/><br />
-        </div>
-          <label for="Фамилия">Фамилия</label>
-        <div>
+            name="Name"/><br />                   
+          </div>
+          <label for="Surname">Фамилия</label>
+          <div>
             <input
               type="text"
-              name="Фамилия"/><br />
-            </div>
-            <label for="Отчество">Отчество</label>
-        <div>
+              name="Surname"/><br />
+          </div>
+            <label for="Second_name">Отчество</label>
+          <div>
             <input
             type="text"
-            name="Отчество"
-            /><br />
-        </div>
-        <label for="Дата рождения">Дата рождения</label>
-        <div>
+            name="Second_name"/><br />
+          </div>
+          <label for="Birth_date">Дата рождения</label>
+          <div>
             <input
             type ="date"
-            name="Дата рождения"
+            name="Birth_date"
             /><br />
-        </div>
-        <label for="Phone">Phone</label>
-        <div>
+          </div>
+          <label for="Phone">Phone</label>
+          <div>
             <input
             type ="tel"
             name="Phone"
             /><br />
-        </div>
-        <label for="Email">Email</label>
-        <div>
+          </div>
+          <label for="Email">Email</label>
+          <div>
             <input
             type ="email"
             name="Email"
             /><br />
-        </div>
-        </fieldset>
+          </div>       
           <div  class="sub">          
             <legend>Выберите предмет</legend>
             <input type="checkbox" name="" id="">Математика
             <input type="checkbox" name="Собеседование" id="">Физика
             <input type="checkbox" name="" id="">Информатика
           </div>
-        
-        
-        
           <div  class="sub">  
           <legend>Выберите удобное для Вас время</legend>            
           <label for="Time"><input 
@@ -86,17 +81,17 @@
             name="Time"
             id="T2"
             value="10:30">10:30</label>
-            <label for="Time"><input 
+          <label for="Time"><input 
               type="radio" 
               name="Time"
               id="T3"
               value="11:00">11:00</label>
-            <label for="Time"><input 
+          <label for="Time"><input 
               type="radio" 
               name="Time"
               id="T4"
               value="11:30">11:30 </label>
-            </div>
+          </div>
             
                     
           <div class="sub">
