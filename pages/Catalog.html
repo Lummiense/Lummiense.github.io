@@ -48,7 +48,18 @@
         <td><a href="https://html5book.ru/">https://html5book.ru</a></td>
       </tr>
      
-   </table>     
+   </table> 
+   <div class="switch-btn"></div> 
+   <script>
+    $('.switch-btn').click(function(){
+      $(this).toggleClass('switch-on');
+      if ($(this).hasClass('switch-on')) {
+        $(this).trigger('on.switch');
+      } else {
+        $(this).trigger('off.switch');
+      }
+    });
+    </script>   
     </main>
     
 </body>

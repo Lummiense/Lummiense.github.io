@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Регистрация на участие в конференции</title>
     <link rel="stylesheet" href="../style/style.css">
-    <script src="../Script/Not_Null_Validation.js"></script>
+    <script src="../Script/Not_Null_Validation.js"></script>    
 </head>
 <body class="Conference" >  
     <header>
@@ -63,12 +63,26 @@
             name="Email"
             /><br />
           </div>       
-          <div  class="sub">          
-            <legend>Выберите предмет</legend>
-            <input type="checkbox" name="" id="">Математика
-            <input type="checkbox" name="Собеседование" id="">Физика
-            <input type="checkbox" name="" id="">Информатика
+          <div  class="Choose_subject">          
+            <legend>Доклад по предмету</legend>
+            <ul>Математика
+              <div class="switch-btn"></div> 
+            </ul>
+            
+            <ul>Физика</ul>
+            <ul>Информатика</ul>          
+          
           </div>
+          <script>
+            $('.switch-btn').click(function(){
+              $(this).toggleClass('switch-on');
+              if ($(this).hasClass('switch-on')) {
+                $(this).trigger('on.switch');
+              } else {
+                $(this).trigger('off.switch');
+              }
+            });
+            </script>
           <div  class="sub">  
           <legend>Выберите удобное для Вас время</legend>            
           <label for="Time"><input 
