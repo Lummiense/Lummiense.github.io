@@ -1,7 +1,7 @@
-function Validate(){
-if (document.anketa.name.value=="")
-{
-    alert("Заполните поле  Имя")
-}
+// function Validate(){
+// if (document.anketa.name.value=="")
+// {
+//     alert("Заполните поле  Имя")
+// }
 
-}
+// }

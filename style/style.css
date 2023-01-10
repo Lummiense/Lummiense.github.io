@@ -31,28 +31,40 @@ width: 500px;
 height: 600px;
 left: 610px;
 }
+.Choose_subject{
+    padding-top: 10px;
+   }
+ul{
+    text-align: left;
+  }
+  #sw1{
+   left:15px
+  }
+  #sw2{
+left: 57px;
+  }
 .switch-btn {
     display: inline-block;
-    width: 62px; /* ширина переключателя */
-    height: 24px; /* высота переключателя */
-    border-radius: 12px; /* радиус скругления */
+    width: 24px; /* ширина переключателя */
+    height: 14px; /* высота переключателя */
+    border-radius: 8px; /* радиус скругления */
     background: #bfbfbf; /* цвет фона */
     z-index: 0;
     margin: 0;
     padding: 0;
     border: none;
-    cursor: pointer;
+    cursor:pointer;
     position: relative;
     transition-duration: 300ms; /* анимация */
   }
   .switch-btn::after {
     content: "";
-    height: 36px; /* высота кнопки */
-    width: 36px; /* ширина кнопки */
-    border-radius: 18px; /* радиус кнопки */
+    height: 16px; /* высота кнопки */
+    width: 14px; /* ширина кнопки */
+    border-radius: 8px; /* радиус кнопки */
     background: #fff; /* цвет кнопки */
-    top: -6px; /* положение кнопки по вертикали относительно основы */
-    left: -6px; /* положение кнопки по горизонтали относительно основы */
+    top: -2px; /* положение кнопки по вертикали относительно основы */
+    left: -2px; /* положение кнопки по горизонтали относительно основы */
     transition-duration: 300ms; /* анимация */
     box-shadow: 0 0 10px 0 #999999; /* тень */
     position: absolute;
@@ -63,6 +75,7 @@ left: 610px;
     box-shadow: inset 0 0 10px 0 #999999; /* тень */
   }
   .switch-on::after {
-    left: 30px;
+    left: 14px;
     background: #118c4e;
   }
+ 

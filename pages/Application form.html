@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Регистрация на участие в конференции</title>
     <link rel="stylesheet" href="../style/style.css">
-    <script src="../Script/Not_Null_Validation.js"></script>    
+    <script src="../Script/Not_Null_Validation.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>    
 </head>
 <body class="Conference" >  
     <header>
@@ -66,11 +67,14 @@
           <div  class="Choose_subject">          
             <legend>Доклад по предмету</legend>
             <ul>Математика
-              <div class="switch-btn"></div> 
+              <div class="switch-btn switch-on" id="sw1"></div> 
+            </ul>            
+            <ul>Физика
+              <div class="switch-btn switch-on" id="sw2"></div> 
             </ul>
-            
-            <ul>Физика</ul>
-            <ul>Информатика</ul>          
+            <ul>Информатика
+              <div class="switch-btn switch-on" id="sw3"></div> 
+            </ul>          
           
           </div>
           <script>
