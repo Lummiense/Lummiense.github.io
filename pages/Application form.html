@@ -89,15 +89,11 @@
                 $(this).trigger('off.switch');
               }
             })
-            // .click(function(){
-            //   let subject = document.getElementById("Choose_subject");
-            //   let input = document.createElement("subject_field1");
-            //   input.type = "text"; 
-            //   let br = document.createElement("Choose_subject");
-            //   form.appendChild(input);
-            //   form.appendChild(br);
-
-            // })
+            .click(function(){
+              let newDiv = document.createElement("div");
+              div.className="text"
+              document.body.append(newDiv);
+             })
             </script>
           <div class="sub"><input type="submit" />
             <input type="reset" value="Очистить форму">
