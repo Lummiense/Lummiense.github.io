@@ -78,4 +78,19 @@ left: 57px;
     left: 14px;
     background: #118c4e;
   }
+  #subject_field1{
+    position: relative;
+    left: 20px;
+    bottom: 2px;
+  }
+  #subject_field2{
+    position: relative;
+    left: 20px;
+    bottom: 2px;
+  }
+  #subject_field3{
+    position: relative;
+    left: 20px;
+    bottom: 2px;
+  }
  

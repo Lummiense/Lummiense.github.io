@@ -67,13 +67,16 @@
           <div  class="Choose_subject">          
             <legend>Доклад по предмету</legend>
             <ul>Математика
-              <div class="switch-btn switch-on" id="sw1"></div> 
+              <div class="switch-btn" id="sw1"></div>
+              <input type="text" class="subject_field" id="subject_field1" value="Введите тему выступления">
             </ul>            
             <ul>Физика
-              <div class="switch-btn switch-on" id="sw2"></div> 
+              <div class="switch-btn" id="sw2"></div>
+              <input type="text" class="subject_field" id="subject_field2" value="Введите тему выступления"> 
             </ul>
             <ul>Информатика
-              <div class="switch-btn switch-on" id="sw3"></div> 
+              <div class="switch-btn" id="sw3"></div>
+              <input type="text" class="subject_field" id="subject_field3" value="Введите тему выступления"> 
             </ul>          
           
           </div>
@@ -85,46 +88,17 @@
               } else {
                 $(this).trigger('off.switch');
               }
-            });
+            })
+            // .click(function(){
+            //   let subject = document.getElementById("Choose_subject");
+            //   let input = document.createElement("subject_field1");
+            //   input.type = "text"; 
+            //   let br = document.createElement("Choose_subject");
+            //   form.appendChild(input);
+            //   form.appendChild(br);
+
+            // })
             </script>
-          <div  class="sub">  
-          <legend>Выберите удобное для Вас время</legend>            
-          <label for="Time"><input 
-            type="radio" 
-            name="Time"
-            id="T1"
-            value="10:00">10:00</label>  
-          <label for="Time"><input 
-            type="radio" 
-            name="Time"
-            id="T2"
-            value="10:30">10:30</label>
-          <label for="Time"><input 
-              type="radio" 
-              name="Time"
-              id="T3"
-              value="11:00">11:00</label>
-          <label for="Time"><input 
-              type="radio" 
-              name="Time"
-              id="T4"
-              value="11:30">11:30 </label>
-          </div>
-            
-                    
-          <div class="sub">
-          <legend>Форма контроля</legend>            
-           <input type="checkbox" name="" id="">Тест
-           <input type="checkbox" name="Собеседование" id="">Собеседование
-           <input type="checkbox" name="" id="">Доклад
-           <input type="checkbox" name="Собеседование" id="">Контрольная работа
-          </div>
-          <div class="sub">
-            Дополнительная информация
-          </div>
-          <div class="sub">
-            <textarea name="" id="" cols="30" rows="3"></textarea>
-          </div>
           <div class="sub"><input type="submit" />
             <input type="reset" value="Очистить форму">
           </div>
