@@ -7,7 +7,7 @@
     <title>Регистрация на участие в конференции</title>
     <link rel="stylesheet" href="../style/style.css">
     <script src="../Script/Not_Null_Validation.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>    
+    <script src="../library/jquery-3.6.3.min.js"></script>    
 </head>
 <body class="Conference" >  
     <header>
@@ -68,32 +68,34 @@
             <legend>Доклад по предмету</legend>
             <ul>Математика
               <div class="switch-btn" id="sw1"></div>
-              <input type="text" class="subject_field" id="subject_field1" value="Введите тему выступления">
+              <!-- <input type="text" class="subject_field" id="subject_field1" value="Введите тему выступления"> -->
+                           
             </ul>            
             <ul>Физика
               <div class="switch-btn" id="sw2"></div>
-              <input type="text" class="subject_field" id="subject_field2" value="Введите тему выступления"> 
+              <!-- <input type="text" class="subject_field" id="subject_field2" value="Введите тему выступления">  -->
             </ul>
             <ul>Информатика
               <div class="switch-btn" id="sw3"></div>
-              <input type="text" class="subject_field" id="subject_field3" value="Введите тему выступления"> 
+              <!-- s<input type="text" class="subject_field" id="subject_field3" value="Введите тему выступления">  -->
             </ul>          
           
-          </div>
+          </div>                  
           <script>
             $('.switch-btn').click(function(){
               $(this).toggleClass('switch-on');
               if ($(this).hasClass('switch-on')) {
                 $(this).trigger('on.switch');
-              } else {
+                $('.switch-btn').append(function (index) {
+              return $('<input>', {
+                text: 'Введите тему'
+              });
+            });
+              } 
+              else {
                 $(this).trigger('off.switch');
               }
-            })
-            .click(function(){
-              let newDiv = document.createElement("div");
-              div.className="text"
-              document.body.append(newDiv);
-             })
+            })            
             </script>
           <div class="sub"><input type="submit" />
             <input type="reset" value="Очистить форму">
