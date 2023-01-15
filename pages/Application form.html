@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Регистрация на участие в конференции</title>
     <link rel="stylesheet" href="../style/style.css">
-    <script src="../Script/Not_Null_Validation.js"></script>
+    <script src="../Script/input validation.js"></script>
     <script src="../library/jquery-3.6.3.min.js"></script>    
 </head>
 <body class="Conference" >  
@@ -21,49 +21,39 @@
         </nav>
     </header>
     <main>
-    <form name ="anketa"  method="post">      
+    <form name ="anketa" onsubmit="return validateForm()" method="post">      
         <div>
             <b>Заполните данные анкеты</b>
         </div>        
-          <label for="Name">Имя</label>
+          <label for="name">Имя</label>
           <div>          
-            <input
-            type="text"            
-            name="Name"/><br />                   
+            <input type="text" id="Name" name="name" placeholder="Введите имя"/><br />
+            <div class="error" id="nameErr"></div>                   
           </div>
-          <label for="Surname">Фамилия</label>
+            <label for="Surname">Фамилия</label>
           <div>
-            <input
-              type="text"
-              name="Surname"/><br />
+            <input type="text" id="surname" name="surname" placeholder="Введите фамилию"/><br />
+            <div class="error" id="surnameErr"></div>
           </div>
             <label for="Second_name">Отчество</label>
           <div>
-            <input
-            type="text"
-            name="Second_name"/><br />
+            <input type="text" id="second_name" name="second_name" placeholder="Введите отчество"/><br />
+            <div class="error" id="second_nameErr"></div>
           </div>
-          <label for="Birth_date">Дата рождения</label>
+            <label for="Birth_date">Дата рождения</label>
           <div>
-            <input
-            type ="date"
-            name="Birth_date"
-            /><br />
+            <input type ="date" id="Birth_date" name="Birth_date" /><br />
           </div>
-          <label for="Phone">Phone</label>
+            <label for="Phone">Phone</label>
           <div>
-            <input
-            type ="tel"
-            name="Phone"
-            /><br />
+            <input type ="text" id="phone" name="phone" placeholder="Формат +71111111111"/><br />
+            <div class="error" id="phoneErr"></div>
           </div>
-          <label for="Email">Email</label>
-          <div>
-            <input
-            type ="email"
-            name="Email"
-            /><br />
-          </div>       
+            <label for="Email">Email</label>
+          <div> 
+            <input type ="text" id="email" name="email" placeholder="Введите Email"/><br />
+            <div class="error" id="emailErr"></div>
+          </div>          
           <div  class="Choose_subject">          
             <legend>Доклад по предмету</legend>
             <ul>Математика
@@ -74,7 +64,7 @@
                   if ($(this).hasClass('switch-on')) {
                     $(this).trigger('on.switch');
                     $('#sw1').after(function (index) {
-                  return $('<input type="text" class="subject_field" id="subject_field1" value="Введите тему выступления">', {
+                  return $('<input type="text" class="subject_field" id="subject_field1" placeholder="Введите тему выступления">', {
                     
                   });
                 });
@@ -94,7 +84,7 @@
                   if ($(this).hasClass('switch-on')) {
                     $(this).trigger('on.switch');
                     $('#sw2').after(function (index) {
-                  return $('<input type="text" class="subject_field" id="subject_field2" value="Введите тему выступления">', {
+                  return $('<input type="text" class="subject_field" id="subject_field2" placeholder="Введите тему выступления">', {
                     
                   });
                 });
@@ -114,8 +104,8 @@
                   if ($(this).hasClass('switch-on')) {
                     $(this).trigger('on.switch');
                     $('#sw3').after(function (index) {
-                  return $('<input type="text" class="subject_field" id="subject_field3" value="Введите тему выступления">', {                    
-                  });
+                  return $('<input type="text" class="subject_field" id="subject_field3" placeholder="Введите тему выступления">', {                    
+                  });                 
                 });
                   } 
                   else {
@@ -124,19 +114,14 @@
                   }
                 })            
                 </script>
-                <script>
-                  $('#subject_field3:text').click(function(){
-                   $(this).val('');
-                    });
-                 </script>                       
+                
             </ul>          
             
-          </div>
-                      
-         
-          <div class="sub"><input type="submit" />
-            <input type="reset" value="Очистить форму">
-          </div>
+          </div>       
+          <div class="sub">
+            <input type="submit" id="Submit"/>
+            <input type="reset" value="Очистить форму">               
+          </div>          
     </form>
 </main>  
 </body>
