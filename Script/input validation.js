@@ -83,16 +83,16 @@ function validateForm() {
     // Запрещаем отправку формы в случае ошибок
     if((nameErr || surnameErr || second_nameErr || emailErr || phoneErr) == true) {
        return false;
-    } else {                           
-        return document.write("<body style='font-weight: bold;color: black;font-size: 20px;text-align: center;background: linear-gradient(blue, pink);position: relative;top: 10px;width: 600px;height: 700px;left: 610px;'><div style = 'background-color: aliceblue;height: 750px;'><h1>Вы ввели следующие данные</h1>"+
-        "<h2>Имя: <h2>"+ name +
-        "<h2>Фамилия: <h2>"+ surname+
-        "<h2>Отчество: <h2>" + second_name+
-        "<h2>Дата рождения: <h2>"+ birth_date+
-        "<h2>Email: <h2>"+ email+
-        "<h2>Номер телефона: <h2><div><body>"+ phone
+    } else {   
+        summary_window=window.open();                        
+        summary_window.document.write("<head><title>Данные, введёные пользователем</title></head><body style='font-weight: bold;color: black;font-size: 20px;text-align: center;background: linear-gradient(blue, pink);margin:0 auto;position: relative;width: 600px;'><div style = 'background-color: aliceblue;border-style:outset;border-color: rgb(135, 72, 120);border-width: 10px;'><h1>Вы ввели следующие данные</h1>"+
+        "<h2>Имя: "+ name +"</h2>" +
+        "<h2>Фамилия: " + surname + "</h2>" +
+        "<h2>Отчество: "+ second_name + "</h2>" +
+        "<h2>Дата рождения: " + birth_date + "</h2>" +
+        "<h2>Email: " + email+"</h2>" +
+        "<h2>Номер телефона: " +phone + "</h2></div></body>"
         )
-       
+        return summary_window.document.close()
     }
 };
-// TODO: В данный момент не проходит сабмит, потому что не успевает отправить данные прежде, чем откроется новая форма. Возможно нужно поставить задержку отправки...
