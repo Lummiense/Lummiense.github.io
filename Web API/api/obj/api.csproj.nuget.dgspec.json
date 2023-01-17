@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lummiense\\Source\\Repos\\Lummiense\\Lummiense.github.io\\Web API\\api\\api.csproj": {}
+    "C:\\Users\\Lummiense\\source\\repos\\Lummiense\\Lummiense.github.io\\Web API\\api\\api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lummiense\\Source\\Repos\\Lummiense\\Lummiense.github.io\\Web API\\api\\api.csproj": {
+    "C:\\Users\\Lummiense\\source\\repos\\Lummiense\\Lummiense.github.io\\Web API\\api\\api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lummiense\\Source\\Repos\\Lummiense\\Lummiense.github.io\\Web API\\api\\api.csproj",
+        "projectUniqueName": "C:\\Users\\Lummiense\\source\\repos\\Lummiense\\Lummiense.github.io\\Web API\\api\\api.csproj",
         "projectName": "api",
-        "projectPath": "C:\\Users\\Lummiense\\Source\\Repos\\Lummiense\\Lummiense.github.io\\Web API\\api\\api.csproj",
+        "projectPath": "C:\\Users\\Lummiense\\source\\repos\\Lummiense\\Lummiense.github.io\\Web API\\api\\api.csproj",
         "packagesPath": "C:\\Users\\Lummiense\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lummiense\\Source\\Repos\\Lummiense\\Lummiense.github.io\\Web API\\api\\obj\\",
+        "outputPath": "C:\\Users\\Lummiense\\source\\repos\\Lummiense\\Lummiense.github.io\\Web API\\api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Lummiense\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -42,7 +42,11 @@
           "dependencies": {
             "EntityFramework": {
               "target": "Package",
-              "version": "[5.0.0, )"
+              "version": "[6.4.4, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.17, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -75,8 +79,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -88,7 +91,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
         }
       }
     }
