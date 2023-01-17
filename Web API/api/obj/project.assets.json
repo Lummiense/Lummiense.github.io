@@ -2246,25 +2246,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Lummiense\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet": {}
+    "C:\\Users\\Lummiense\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Work\\edu\\C#\\Projects\\Lummiense.github.io\\Web API\\api\\api.csproj",
+      "projectUniqueName": "C:\\Users\\Lummiense\\Source\\Repos\\Lummiense\\Lummiense.github.io\\Web API\\api\\api.csproj",
       "projectName": "api",
-      "projectPath": "C:\\Work\\edu\\C#\\Projects\\Lummiense.github.io\\Web API\\api\\api.csproj",
+      "projectPath": "C:\\Users\\Lummiense\\Source\\Repos\\Lummiense\\Lummiense.github.io\\Web API\\api\\api.csproj",
       "packagesPath": "C:\\Users\\Lummiense\\.nuget\\packages\\",
-      "outputPath": "C:\\Work\\edu\\C#\\Projects\\Lummiense.github.io\\Web API\\api\\obj\\",
+      "outputPath": "C:\\Users\\Lummiense\\Source\\Repos\\Lummiense\\Lummiense.github.io\\Web API\\api\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet"
-      ],
       "configFilePaths": [
         "C:\\Users\\Lummiense\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -2324,7 +2319,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -2336,7 +2332,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   },
@@ -2345,7 +2341,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'EntityFramework 5.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0'. This package may not be fully compatible with your project.",
+      "message": "Пакет \"EntityFramework 5.0.0\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\", а не целевой платформы проекта \"net5.0\". Этот пакет может быть не полностью совместим с вашим проектом.",
       "libraryId": "EntityFramework",
       "targetGraphs": [
         "net5.0"
