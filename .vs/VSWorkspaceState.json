@@ -1,9 +1,10 @@
 {
   "ExpandedNodes": [
     "",
+    "\\pages",
     "\\Web API",
-    "\\Web API\\api"
+    "\\Web API\\api",
+    "\\Web API\\api\\Controllers"
   ],
-  "SelectedNode": "\\Web API\\api\\DataContext.cs",
   "PreviewInSolutionExplorer": false
 }
