@@ -5,15 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Каталог ресурсов</title>
+    <title>Картинная галерея</title>
     <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
-    <header>
-        <h1>
-            Галерея
-        </h1>
-        <nav class="Navigation">
+    <header id="main_header">
+            <nav class="Navigation">
             <a href="../index.html">Главная</a>
             <a href="Application form.html">Регистрация на участие в конференции</a>
             <a href="Catalog.html">Галерея</a>
@@ -21,35 +18,27 @@
         </nav>
     </header>
     <main>
-   <table>
-    <caption>Полезные ссылки</caption>
-    <tr>
-        <th>Название</th>
-        <th>Описание</th>
-        <th>Ссылка</th>        
-      </tr>
-      <tr>
-        <td>Справочник по HTML</td>
-        <td>
-            <p>
-                <img src="https://hcdev.ru/html.svg" alt="Лого" height="10" width="10">
-                Сайт-справочник по HTML, CSS, JS                
-            </p>
-            </td>
-        <td><a href="https://hcdev.ru/html/">https://hcdev.ru</a></td>
-      </tr>
-      <tr>
-        <td>Справочник по HTML5</td>
-        <td>
-            <p>
-                <img src="https://html5book.ru/wp-content/uploads/2022/07/html5_logo.png" alt="Лого" height="10" width="10">
-                Сайт-справочник по HTML5                
-            </p>
-            </td>
-        <td><a href="https://html5book.ru/">https://html5book.ru</a></td>
-      </tr>
-     
-   </table> 
+        <div class="sim-slider">
+            <ul class="sim-slider-list">
+                <li class="sim-slider-element"><img src="../images/gallery/Американская готика.jpg" alt="1"></li>
+                <li class="sim-slider-element"><img src="../images/gallery/Апофеоз войны.jpg" alt="2"></li>
+                <li class="sim-slider-element"><img src="../images/gallery/Богатыри.jpg" alt="3"></li>
+                <li class="sim-slider-element"><img src="../images/gallery/Вавилонская башня.jpg" alt="2"></li>
+                <li class="sim-slider-element"><img src="../images/gallery/Девятый вал.jpg" alt="2"></li>
+                <li class="sim-slider-element"><img src="../images/gallery/Мона Лиза.jpg" alt="2"></li>
+                <li class="sim-slider-element"><img src="../images/gallery/Последний день помпеи.jpg" alt="2"></li>
+                <li class="sim-slider-element"><img src="../images/gallery/Постоянство памяти.jpg" alt="2"></li>
+                <li class="sim-slider-element"><img src="../images/gallery/Свобода.jpg" alt="2"></li>
+                <li class="sim-slider-element"><img src="../images/gallery/Сикстинская Мадонна.jpg" alt="2"></li>
+                <li class="sim-slider-element"><img src="../images/gallery/Тайная вечеря.jpg" alt="2"></li>
+            </ul>
+            <div class="sim-slider-arrow-left"></div>
+            <div class="sim-slider-arrow-right"></div>
+            <div class="sim-slider-dots"></div>
+        </div>
+        <script src="../Script/sim-slider.js"></script>
+        <script>new Sim()</script>
+
    
     </main>
     
