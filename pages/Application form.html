@@ -21,7 +21,7 @@
         </nav>
     </header>
     <main>
-    <form name ="anketa" onsubmit="return validateForm()" method="post" action="../Web API/api/Program.cs">      
+    <form name ="anketa" onsubmit="return validateForm()" method="post">      
         <div>
             <b>Заполните данные анкеты</b>
         </div>        
@@ -119,18 +119,20 @@
           </div> 
           <script>
             function Send(){
-              let formData = JSON.stringify($("#anketa").serializeArray());
-              let xhr= new XMLHttpRequest();
-              $. ajax({
-                  type: "POST",
-                    url: "../Web API/api/Controllers/",
-                    data: formData,
-                    success: function(){},
-                    dataType: "json",
-                    contentType : "application/json"
-              })
-              xhr.send(ajax);
-              alert("Данные отправлены");              
+                            
+                let formData = JSON.stringify($("#anketa").serializeArray());
+                let xhr= new XMLHttpRequest();
+                xhr.open('POST','../Web API/api/Controllers')
+                xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
+                xhr.onreadystatechange = function () {
+                    // если запрос принят и сервер ответил, что всё в порядке
+                    if (xhr.readyState === 4 && xhr.status === 200) {
+                        // выводим то, что ответил нам сервер — так мы убедимся, что данные он получил правильно
+                        result.innerHTML = this.responseText;
+                    }
+                };
+                xhr.send(formData);
+                        
             }
           </script>      
           <div class="sub">

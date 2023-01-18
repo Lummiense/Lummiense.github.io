@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kzNKKGqPXksdCEiggxzFcXWBW4n7W0PsIsqX4jPCG1BIrwOQBV3gtii+2Dx8wVV0AdphTTlNCdZGtmFwKn/jTg==",
+  "dgSpecHash": "Enq4oWR1fQpFejGD/YiYtmZFdra2kMK0ba0fkrtct6nXYcjzNPlCuBHpoP57uEJQFzto53l9j+uIldfKd7zOwA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lummiense\\source\\repos\\Lummiense\\Lummiense.github.io\\Web API\\api\\api.csproj",
+  "projectFilePath": "C:\\Users\\Lummiense\\Source\\Repos\\Lummiense\\Lummiense.github.io\\Web API\\api\\api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lummiense\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\Lummiense\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
