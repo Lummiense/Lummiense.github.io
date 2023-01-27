@@ -11,5 +11,7 @@ namespace api.Entities
         public string Phone { get; set; }
         public string Email { get; set; }
         public uint Id { get; set; }
+            
+        
     }
 }

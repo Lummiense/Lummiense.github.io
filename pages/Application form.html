@@ -122,7 +122,7 @@
                             
                 let formData = JSON.stringify($("#anketa").serializeArray());
                 let xhr= new XMLHttpRequest();
-                xhr.open('POST','../Web API/api/Controllers')
+                xhr.open('POST','http://localhost:5000//User/Add')
                 xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
                 xhr.onreadystatechange = function () {
                     // если запрос принят и сервер ответил, что всё в порядке
