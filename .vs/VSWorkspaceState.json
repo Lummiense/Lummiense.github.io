@@ -2,9 +2,7 @@
   "ExpandedNodes": [
     "",
     "\\pages",
-    "\\Web API",
-    "\\Web API\\api",
-    "\\Web API\\api\\Controllers"
+    "\\Web API"
   ],
   "SelectedNode": "\\Web API\\Web API.sln",
   "PreviewInSolutionExplorer": false

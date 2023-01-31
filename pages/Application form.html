@@ -21,7 +21,7 @@
         </nav>
     </header>
     <main>
-    <form name ="anketa" onsubmit="return validateForm()" method="post">      
+    <form name ="anketa" onsubmit="return validateForm()&send()" method="post">      
         <div>
             <b>Заполните данные анкеты</b>
         </div>        
@@ -120,19 +120,26 @@
           <script>
             function Send(){
                             
-                let formData = JSON.stringify($("#anketa").serializeArray());
+                
+                let formData = new FormData(document.forms.namedItem(anketa);
                 let xhr= new XMLHttpRequest();
-                xhr.open('POST','http://localhost:5000//User/Add')
+                xhr.open('POST','http://localhost:5000/User/Add')
                 xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
-                xhr.onreadystatechange = function () {
-                    // если запрос принят и сервер ответил, что всё в порядке
-                    if (xhr.readyState === 4 && xhr.status === 200) {
-                        // выводим то, что ответил нам сервер — так мы убедимся, что данные он получил правильно
-                        result.innerHTML = this.responseText;
+                // отслеживаем процесс отправки
+                xhr.upload.onprogress = function (event) {
+                    console.log(`Отправлено ${event.loaded} из ${event.total}`);
+                };
+
+                // Ждём завершения: неважно, успешного или нет
+                xhr.onloadend = function () {
+                    if (xhr.status == 200) {
+                        console.log("Успех");
+                    } else {
+                        console.log("Ошибка " + this.status);
                     }
                 };
                 xhr.send(formData);
-                        
+                                                       
             }
           </script>      
           <div class="sub">
